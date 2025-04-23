@@ -1,0 +1,49 @@
+body {
+    background-color: #f3f3f3;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #1d428a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .player {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ffffff;
+  }
+  
+  .video {
+    padding: 20px;
+    background-color: #e8f0fe;
+    text-align: center;
+  }
+  
+  .tableau {
+    padding: 20px;
+    background-color: #d0e0e3;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e4e7ed;
+    color: white;
+  }
+  

@@ -1,0 +1,77 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joke Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .joke-box {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff6347;
+      margin-bottom: 20px;
+    }
+
+    .joke {
+      font-size: 1.3em;
+      color: #333333;
+      margin-bottom: 40px;
+    }
+
+    button {
+      background-color: #ff6347;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e14c37;
+    }
+  </style>
+</head>
+<body>
+  <div class="joke-box">
+    <h1>Here's a Joke for You:</h1>
+    <div class="joke" id="joke">Why don't scientists trust atoms? Because they make up everything!</div>
+    <button onclick="generateJoke()">Get Another Joke</button>
+  </div>
+
+  <script>
+    const jokes = [
+      "Why don’t skeletons fight each other? They don’t have the guts.",
+      "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+      "Why did the scarecrow win an award? Because he was outstanding in his field!",
+      "I asked my dog what's two minus two. He said nothing.",
+      "Parallel lines have so much in common. It’s a shame they’ll never meet."
+    ];
+
+    function generateJoke() {
+      const jokeEl = document.getElementById("joke");
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      jokeEl.textContent = jokes[randomIndex];
+    }
+  </script>
+</body>
+</html>

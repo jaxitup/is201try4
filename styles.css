@@ -1,0 +1,28 @@
+p{
+    font-weight: bold;
+}
+#top{
+    text-decoration: underline;
+}
+.emphasizeText{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(121, 32, 12)
+}
+body{
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 5px solid rgb(169, 21, 21);
+    margin: 25px;
+    padding: 50px;
+}
+
+.centered-list{
+    padding-left:0;
+    list-style-position: outside;
+    margin: 0 auto;
+    display: table;
+    text-align: left;
+}
+
